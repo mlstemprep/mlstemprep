@@ -64,6 +64,7 @@ html {
   padding-top: 2px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding-bottom: 2px;
+  border-radius: 10px;
 }
 
 .shadow:hover {
@@ -71,6 +72,7 @@ html {
   padding-top: 2px;
   box-shadow: 0 5px 10px 0 rgba(84, 185, 170, 1), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
   padding-bottom: 2px;
+  border-radius: 10px;
 }
 
 .profile-pic {

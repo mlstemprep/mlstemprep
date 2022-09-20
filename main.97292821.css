@@ -13,6 +13,10 @@ html {
   -webkit-text-size-adjust: 100%
 }
 
+/* this section is for rotating stats at the top of the website */
+
+/* it ends here */
+
 .black-image-project-hover {
   display: block
 }
@@ -4644,7 +4648,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  padding: 12% 0
+  padding: 5% 0
 }
 
 .overlay {

@@ -12,7 +12,7 @@
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
   <!-- slideshow -->
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
   <link href="./assets/apple-touch-icon.png" rel="apple-touch-icon">
@@ -22,41 +22,59 @@
 
   <link href="./main.97292821.css" rel="stylesheet">
 
-<!--slideshow -->
+  <!--slideshow -->
 
-<style>
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 50%;
-  position: relative;
-  margin: auto;
-}
+    body {
+      font-family: Verdana, sans-serif;
+    }
 
-.active {
-  ;
-}
+    .mySlides {
+      display: none;
+    }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 4s;
-}
+    img {
+      vertical-align: middle;
+    }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 50%;
+      position: relative;
+      margin: auto;
+    }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-</style>
+    .active {
+      ;
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 4s;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {
+        font-size: 11px
+      }
+    }
+  </style>
 
 
 
@@ -66,50 +84,55 @@ img {vertical-align: middle;}
 
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KXEYHHME6V"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXEYHHME6V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-KXEYHHME6V');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-<!-- Script for automatic slideshow of images -->
+    gtag('config', 'G-KXEYHHME6V');
+  </script>
+
+  <!-- Script for automatic slideshow of images -->
 
 
 </head>
 
 <body>
+  <!--I copied this code from W3School to add scrolling animation to the website -->
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
-  $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
+    $(document).ready(function() {
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
 
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
 
-        // Store hash
-        var hash = this.hash;
+          // Store hash
+          var hash = this.hash;
 
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function() {
 
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
     });
-  });
   </script>
 
-  
+
   <!-- Add your content of header -->
   <header>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -127,9 +150,9 @@ img {vertical-align: middle;}
           <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="./index.html#subject-section" title="" class="anchor-link">Subjects</a></li>
+            <li><a href="./index.html#review-section" title="" class="anchor-link">Reviews</a></li>
             <li><a href="./index.html#tutor-section" title="" class="anchor-link">Tutors</a></li>
             <li><a href="./index.html#university-section" title="" class="anchor-link">University Courses</a></li>
-            <li><a href="./index.html#review-section" title="" class="anchor-link">Reviews</a></li>
             <li><a href="./index.html#contact-section-container" title="" class="anchor-link">Contact Us</a></li>
 
 
@@ -141,82 +164,85 @@ img {vertical-align: middle;}
     </nav>
   </header>
 
-<!-- add subtext for each image and update -->
-<!-- slideshow -->
-<div class="background-image-container white-text-container" style="background-image: url('./assets/images/img-04.jpg')">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <h1 style="font-size:600%; font-family: Abril Fatface, Times New Roman, Times, serif">ML STEM Prep</h1>
-        <p class="">THE BEST TUTORS YOU WILL FIND</p>
-        <a href="#contact-section-container" class="btn btn-primary btn-lg anchor-link" title="">Get in touch</a>
+  <!-- add subtext for each image and update -->
+  <!-- slideshow -->
+  <div class="background-image-container white-text-container" style="background-image: url('./assets/images/img-04.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 style="font-size:600%; font-family: Abril Fatface, Times New Roman, Times, serif">ML STEM Prep</h1>
+          <h3 class=""> Keeping the dreams alive of tomorrow's Doctors and Engineers! </h3>
+          <br>
+          <a href="#contact-section-container" class="btn btn-primary btn-lg" title="">Get in touch</a>
 
-<div class="slideshow-container section-container">
+          <div class="slideshow-container section-container">
 
-  <div class="mySlides fade">
-    <img src="./assets/images/stat1.png" style="width:100%" alt = "100% success rate in passing students in organic chemistry and calculus if they follow our program">
+            <div class="mySlides fade">
+              <img src="./assets/images/stat1.png" style="width:100%" alt="100% success rate in passing students in organic chemistry and calculus if they follow our program">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="./assets/images/stat2.png" style="width:100%" alt="70% of premed students abandon their dream of becoming doctors because of organic chemistry">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="./assets/images/stat3.png" style="width:100%" alt="50% of engineering students abandon their dream of becoming engineers because of calculus">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="./assets/images/stat4.png" style="width:100%" alt="You can spend $600 on a tutor for a week or upto $10,000 to repeat a semester">
+            </div>
+
+          </div>
+          <br>
+
+          <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+
+          <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {
+                slideIndex = 1
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+              setTimeout(showSlides, 2900); // Change image every 2 seconds
+            }
+          </script>
+
+
+        </div>
+      </div>
+    </div>
   </div>
-
-<div class="mySlides fade">
-  <img src="./assets/images/stat2.png" style="width:100%" alt = "70% of premed students abandon their dream of becoming doctors because of organic chemistry">
-</div>
-
-<div class="mySlides fade">
-  <img src="./assets/images/stat3.png" style="width:100%" alt = "50% of engineering students abandon their dream of becoming engineers because of calculus">
-</div>
-
-<div class="mySlides fade">
-  <img src="./assets/images/stat4.png" style="width:100%" alt = "You can spend $600 on a tutor for a week or upto $10,000 to repeat a semester">
-</div>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-</div>
-
-<script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2900); // Change image every 2 seconds
-}
-</script>
-
-
-</div>
-</div>
-</div>
-</div>
 
 
   <!-- Add your site or app content here -->
 
 
-  <div class="section-container" id = "subject-section">
+  <div class="section-container" id="subject-section">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-12 section-container-spacer">
-          <h2 style = "font-size: 400%; font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center"> Subjects</h2>
+          <h2 style="font-size: 400%; font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center"> Subjects</h2>
         </div>
       </div>
 
@@ -225,7 +251,7 @@ function showSlides() {
           <div class="fa-container">
             <i class="fa fa-flask fa-3x" aria-hidden="true"></i>
           </div>
-          <h3 class="text-center" style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif">Chemistry</h3>
+          <h3 class="text-center" style="font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif">Chemistry</h3>
           <p class="text-center">Organic Chemistry I and II</p>
           <p class="text-center">General Chemistry</p>
           <p class="text-center">AP Chemistry</p>
@@ -235,7 +261,7 @@ function showSlides() {
           <div class="fa-container">
             <i class="fa fa-calculator fa-3x" aria-hidden="true"></i>
           </div>
-          <h3 style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Math</h3>
+          <h3 style="font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Math</h3>
           <p class="text-center">Calculus I and II</p>
           <p class="text-center">Pre-Calculus</p>
           <p class="text-center">Algebra & Geometry</p>
@@ -246,7 +272,7 @@ function showSlides() {
           <div class="fa-container">
             <i class="fa fa-lightbulb-o fa-3x" aria-hidden="true"></i>
           </div>
-          <h3 style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Physics</h3>
+          <h3 style="font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Physics</h3>
           <p class="text-center">Physics I and II</p>
           <p class="text-center">AP Physics</p>
 
@@ -254,70 +280,153 @@ function showSlides() {
       </div>
     </div>
   </div>
+  <!-- Using W3school to automatically generate review carousal -->
+  <div class="section-container touch" id="review-section">
+    <!--Carousel Related W3 code -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-
-  <div class="section-container section-half-background-image-container">
-    <div class="image-column" style="background-image: url('./assets/images/random2.png')"></div>
+    <h2 style="font-size: 400%; font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Reviews</h2>
     <div class="container">
-      <div class="row">
 
-        <div class="col-md-6 col-md-offset-6 text-column">
-          <h2 style = "font-size: 350%; font-family: Abril Fatface, Times New Roman, Times, serif">Why work with us?</h2>
-          <h3 style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif">University of Alabama | Ole Miss | Texas A&M | University of Texas, Austin</h3>
-          <p> We have tutored students at several universities. We care about our students and want them to do well! We have been through the struggles of learning these subjects and realized that we are quite good at teaching them in a way that's fun and exciting! </p>
-          <p>We hope you choose to work with us and learn a thing or two! We take the time to understand each student's needs and speed of learning to tailor our teaching style.</p>
-          <p> All tutoring is online but rest assured, we make our teaching engaging and fun! </p>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      -->
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active text-center">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fella.hart.10236115%2Fposts%2F454950882347003&width=500&show_text=true&height=282&appId" class='shadow' width=80% height="300"
+              style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+
+          <div class="item text-center">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D1645109725681080%26id%3D100005462054887&width=500&show_text=true&height=187&appId" class='shadow' width=80%
+              height="187" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+
+          <div class="item text-center">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fturner.freese%2Fposts%2F880559586068280&width=500&show_text=true&height=263&appId" class='shadow' width=80% height="263"
+              style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+
+          <div class="item text-center">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D1325310247840043%26id%3D100010832415427&width=500&show_text=true&height=270&appId" class='shadow' width=80%
+              height="270" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+
+          <div class="item text-center">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D843924519508722%26id%3D100016735454928&width=500&show_text=true&height=251&appId" class='shadow' width=80%
+              height="251" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+
+          <div class="item text-center">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkendall.skinner.18%2Fposts%2F828444747730865&width=500" class='shadow' width=80% height="199" style="border:none;overflow:hidden" scrolling="no"
+              frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+          </div>
+
+          <div class="item text-center">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmalorie.smith2%2Fposts%2F3473006919420011&width=500" class='shadow' width=80% height="161" style="border:none;overflow:hidden" scrolling="no"
+              frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+
+          <div class="item text-center">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmelissa.hopkins.7121614%2Fposts%2F181054773649417&width=500" class='shadow' width=80% height="180" style="border:none;overflow:hidden"
+              scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+
+          <div class="item text-center">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fbansal.shah%2Fposts%2F3555196571194544&width=500" class='shadow' width=80% height="199" style="border:none;overflow:hidden" scrolling="no"
+              frameborder="0" allowfullscreen="true" allow="autoplay; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+
+          <div class="item text-center">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjerald.barbe%2Fposts%2F3070863599679783&width=500" class='shadow' width=80% height="161" style="border:none;overflow:hidden" scrolling="no"
+              frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+
+          <!--Original code for scrolling buttons
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      -->
+
+          <p class='text-center'> <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </p>
 
         </div>
+
+        <!-- Left and right controls -->
+
       </div>
     </div>
+
   </div>
 
 
-
-  <div class="section-container" id = "tutor-section">
+  <div class="section-container" id="tutor-section">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-12 section-container-spacer">
-          <h2 style = "font-size: 350%; font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center" >Tutors</h2>
+          <h2 style="font-size: 350%; font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Tutors</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12 col-md-4">
 
-          <p class ='text-center'><img class="profile-pic" src="./assets/images/Minnie_round.png" alt="minnie_profile"></p>
-          <h3 style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Minnie</h3>
+          <p class='text-center'><img class="profile-pic" src="./assets/images/Minnie_round.png" alt="minnie_profile"></p>
+          <h3 style="font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Minnie</h3>
           <p class="text-center">B.S./M.S./M.B.A. Chemical Engineering 4.0 GPA</p>
           <p class="text-center">B.S. University of Alabama</p>
           <p class="text-center">M.B.A. University of Virginia</p>
           <p class="text-center">10+ years of teaching experience</p>
-          <p class ='text-center'>  <a class = 'btn btn-primary btn-lg' href = "https://calendly.com/mlstemprep/minnie?month=2022-09">Availability</a> </p>
-        <!--  <p class ='text-center'>  <a class = 'btn btn-primary btn-lg' href = "minnie.html">Bio</a> </p> -->
+          <p class='text-center'> <a class='btn btn-primary btn-lg' href="https://calendly.com/mlstemprep/minnie?month=2022-09">Availability</a> </p>
+          <!--  <p class ='text-center'>  <a class = 'btn btn-primary btn-lg' href = "minnie.html">Bio</a> </p> -->
 
         </div>
 
         <div class="col-xs-12 col-md-4">
-          <p class ='text-center'><img class="profile-pic" src="./assets/images/Ben_headshot.png" alt="deepti_profile"></p>
-          <h3 style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Ben</h3>
+          <p class='text-center'><img class="profile-pic" src="./assets/images/Ben_headshot.png" alt="deepti_profile"></p>
+          <h3 style="font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Ben</h3>
           <p class="text-center"> B.S. in Biomedical Engineering and Chemistry </p>
           <p class="text-center"> University of Texas, Austin </p>
           <p class="text-center"> 7+ years of teaching experience </p>
-          <p class ='text-center'>  <a class = 'btn btn-primary btn-lg' href = "ben.html">Availability</a> </p>
+          <p class="text-center"> <a class='btn btn-primary btn-lg' href="ben.html">Availability</a> </p>
 
         </div>
 
         <div class="col-xs-12 col-md-4">
-          <p class ='text-center'><img class="profile-pic" src="./assets/images/deepti.png" alt="deepti_profile"></p>
-          <h3 style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Deepti</h3>
+          <p class='text-center'><img class="profile-pic" src="./assets/images/deepti.png" alt="deepti_profile"></p>
+          <h3 style="font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Deepti</h3>
           <p class="text-center"> B.S. in Biochemistry </p>
           <p class="text-center"> University of Virginia </p>
           <p class="text-center"> Subjects: Biology and Organic Chemistry </p>
-          <p class ='text-center'>  <a class = 'btn btn-primary btn-lg' href = "deepti.html">Availability</a> </p>
+          <p class='text-center'> <a class="btn btn-primary btn-lg" href="deepti.html">Availability</a> </p>
 
         </div>
 
-    </div>
-<!--
+      </div>
+      <!--
     <div class="row">
       <div class="col-xs-12 col-md-4">
 
@@ -328,11 +437,11 @@ function showSlides() {
         <p class="text-center">5+ years of teaching experience</p>
 
   -->
-    <!--  <p class ='text-center'>  <a class = 'btn btn-primary btn-lg' href = "luis.html">Availability</a> </p>
+      <!--  <p class ='text-center'>  <a class = 'btn btn-primary btn-lg' href = "luis.html">Availability</a> </p>
 
   </div> -->
 
-<!--
+      <!--
       <div class="col-xs-12 col-md-4">
         <p class ='text-center'><img class="profile-pic" src="./assets/images/isaiah_circle.png" alt="isaiah_profile"></p>
         <h3 style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Isaiah</h3>
@@ -352,186 +461,103 @@ function showSlides() {
 
       </div>   -->
 
-  </div>
-
-  </div>
-</div>
-
-<div class="section-container touch" >
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-12 section-container-spacer" id = "university-section">
-        <h2 style = "font-size: 350%; font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">University Specific Courses</h2>
-      </div>
     </div>
 
-    <div class="row">
-      <div class="col-xs-12 col-md-4">
-        <div class="fa-container">
-          <i class="fa fa-flask fa-3x" aria-hidden="true"></i>
+  </div>
+  </div>
+
+  <div class="section-container section-half-background-image-container">
+    <div class="image-column" style="background-image: url('./assets/images/random2.png')"></div>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-md-offset-6 text-column">
+          <h2 style="font-size: 350%; font-family: Abril Fatface, Times New Roman, Times, serif">Why work with us?</h2>
+          <!-- <h3 style="font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif">University of Alabama | Ole Miss | Texas A&M | University of Texas, Austin</h3> -->
+          <p> We have tutored students at several universities. We care about our students and want them to do well! We have been through the struggles of learning these subjects and realized that we are quite good at teaching them in a way that's
+            fun and exciting! </p>
+          <p>We hope you choose to work with us and learn a thing or two! We take the time to understand each student's needs and speed of learning to tailor our teaching style.</p>
+          <p> All tutoring is online but rest assured, we make our teaching engaging and fun! </p>
+
         </div>
-        <h3 style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Chemistry</h3>
-        <div class = "shadow">
-        <h3 style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">University of Alabama</h3>
-        <p class="text-center">General Chemistry: CH 100 101 102 </p>
-        <p class="text-center">Organic Chemistry: CH 105 231 232</p>
-        <p class="text-center">Honors Chemistry: CH 117 118 331 332</p>
-      </div>
-
-      <div class = "shadow">
-        <h3 style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Ole Miss</h3>
-        <p class="text-center">General Chemistry: 101 105 106 115 116 </p>
-        <p class="text-center">Organic Chemistry: CHEM 121 221 222</p>
-        <p class="text-center">Honors Chemistry: CHEM 105H 106H</p>
-      </div>
-
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <div class="fa-container">
-          <i class="fa fa-calculator fa-3x" aria-hidden="true"></i>
-        </div>
-        <h3 style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Math</h3>
-
-      <div class = "shadow">
-        <h3 style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">University of Alabama</h3>
-        <p class="text-center">Algebra: MATH 005 100 </p>
-        <p class="text-center">Pre-Calculus: MATH 112 113 115</p>
-        <p class="text-center">Calculus: MATH 121 125 126 145 146</p>
-      </div>
-
-      <div class = "shadow">
-        <h3 style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Ole Miss</h3>
-        <p class="text-center">Algebra & Geometry: MATH 121 123 125 </p>
-        <p class="text-center">Calculus: MATH 261 262</p>
-      </div>
-
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <div class="fa-container">
-          <i class="fa fa-lightbulb-o fa-3x" aria-hidden="true"></i>
-        </div>
-        <h3 style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Physics</h3>
-        <div class = "shadow">
-        <h3 style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">University of Alabama</h3>
-        <p class="text-center">Physics without Calculus: PHY 101 102 </p>
-        <p class="text-center">Physics with Calculus: PHY 105 106 125 126</p>
-      </div>
-
-      <div class = "shadow">
-        <h3 style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Ole Miss</h3>
-        <p class="text-center">Intro to Physics: Phys 101 102 </p>
-        <p class="text-center">Engineering Physics: Phys 211 212</p>
-      </div>
-
       </div>
     </div>
-    <h3 style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class = "text-center"> Don't see a course listed? Contact us to see if we can support it! </h3>
-    <p class ='text-center'>  <a class = 'btn btn-primary btn-lg' href = "https://us20.list-manage.com/contact-form?u=f14f5e16e35e38de20373df67&form_id=286fad86281713dd67744237458bbf7e">Contact Us</a> </p>
   </div>
-</div>
 
-<!-- Using W3school to automatically generate review carousal -->
-<div class="section-container" id = "review-section">
-  <!--Carousel Related W3 code -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-  <h2 style = "font-size: 400%; font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center" >Reviews</h2>
-  <div class="container">
-
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    -->
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active text-center">
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fella.hart.10236115%2Fposts%2F454950882347003&width=500&show_text=true&height=282&appId" class ='shadow' width=80% height="300" style="border:none;overflow:hidden"
-          scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  <div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-12 section-container-spacer" id="university-section">
+          <h2 style="font-size: 350%; font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">University Courses</h2>
+        </div>
       </div>
 
-      <div class="item text-center">
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D1645109725681080%26id%3D100005462054887&width=500&show_text=true&height=187&appId" class ='shadow' width=80% height="187"
-          style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      <div class="row">
+        <div class="col-xs-12 col-md-4">
+          <div class="fa-container">
+            <i class="fa fa-flask fa-3x" aria-hidden="true"></i>
+          </div>
+          <h3 style="font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Chemistry</h3>
+          <div class="shadow">
+            <h3 class="text-center">University of Alabama</h3>
+            <p class="text-center">General Chemistry: CH 100 101 102 </p>
+            <p class="text-center">Organic Chemistry: CH 105 231 232</p>
+            <p class="text-center">Honors Chemistry: CH 117 118 331 332</p>
+          </div>
+
+          <div class="shadow">
+            <h3 class="text-center">University of Virginia</h3>
+            <p class="text-center">General Chemistry: CHEM 1410 1411 1810 1811 </p>
+            <p class="text-center">Organic Chemistry: CHEM 2410 2411</p>
+
+          </div>
+
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="fa-container">
+            <i class="fa fa-calculator fa-3x" aria-hidden="true"></i>
+          </div>
+          <h3 style="font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Math</h3>
+
+          <div class="shadow">
+            <h3 class="text-center">University of Alabama</h3>
+            <p class="text-center">Algebra: MATH 005 100 </p>
+            <p class="text-center">Pre-Calculus: MATH 112 113 115</p>
+            <p class="text-center">Calculus: MATH 121 125 126 145 146</p>
+          </div>
+
+          <div class="shadow">
+            <h3 class="text-center">University of Virginia</h3>
+            <p class="text-center">Algebra & Geometry: MATH 121 123 125 </p>
+            <p class="text-center">Calculus: MATH 1210 1220 1310 1320</p>
+          </div>
+
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="fa-container">
+            <i class="fa fa-lightbulb-o fa-3x" aria-hidden="true"></i>
+          </div>
+          <h3 style="font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Physics</h3>
+          <div class="shadow">
+            <h3 class="text-center">University of Alabama</h3>
+            <p class="text-center">Physics without Calculus: PHY 101 102 </p>
+            <p class="text-center">Physics with Calculus: PHY 105 106 125 126</p>
+          </div>
+
+          <div class="shadow">
+            <h3 class="text-center">University of Virginia</h3>
+            <p class="text-center">Intro to Physics: PHYS 1425 2415 </p>
+            <p class="text-center">Engineering Physics: Phys 211 212</p>
+          </div>
+
+        </div>
       </div>
-
-      <div class="item text-center">
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fturner.freese%2Fposts%2F880559586068280&width=500&show_text=true&height=263&appId" class ='shadow' width=80% height="263" style="border:none;overflow:hidden"
-          scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-      </div>
-
-      <div class="item text-center">
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D1325310247840043%26id%3D100010832415427&width=500&show_text=true&height=270&appId" class ='shadow' width=80% height="270"
-          style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-      </div>
-
-      <div class="item text-center">
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D843924519508722%26id%3D100016735454928&width=500&show_text=true&height=251&appId" class ='shadow' width=80% height="251"
-          style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-      </div>
-
-      <div class="item text-center">
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkendall.skinner.18%2Fposts%2F828444747730865&width=500" class ='shadow' width=80% height="199" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-          allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-
-      </div>
-
-      <div class="item text-center">
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmalorie.smith2%2Fposts%2F3473006919420011&width=500" class ='shadow' width=80% height="161" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-          allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-      </div>
-
-      <div class="item text-center">
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmelissa.hopkins.7121614%2Fposts%2F181054773649417&width=500"  class ='shadow' width=80% height="180" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-          allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-      </div>
-
-      <div class="item text-center">
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fbansal.shah%2Fposts%2F3555196571194544&width=500" class ='shadow' width=80% height="199" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-          allowfullscreen="true" allow="autoplay; encrypted-media; picture-in-picture; web-share"></iframe>
-      </div>
-
-      <div class="item text-center">
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjerald.barbe%2Fposts%2F3070863599679783&width=500" class ='shadow' width=80% height="161" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-          allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-      </div>
-
-     <!--Original code for scrolling buttons
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    -->
-
-<p class ='text-center'>  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</p>
-
+      <h3 style="font-size: 200%" class="text-center"> Don't see a course listed? Contact us to see if we can support it! </h3>
+      <p class='text-center'> <a class='btn btn-primary btn-lg' href="https://us20.list-manage.com/contact-form?u=f14f5e16e35e38de20373df67&form_id=286fad86281713dd67744237458bbf7e">Contact Form</a> </p>
     </div>
-
-    <!-- Left and right controls -->
-
   </div>
-</div>
 
-</div>
 
 
   <div class="section-container touch" id="contact-section-container">
@@ -539,11 +565,11 @@ function showSlides() {
       <div class="row touch">
         <div class="col-xs-12 col-md-offset-2 col-md-8">
           <div class="section-container-spacer">
-            <h2 style = "font-size: 350%; font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Get in Touch</h2>
+            <h2 style="font-size: 350%; font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Get in Touch</h2>
           </div>
-          <h4 class ='text-center' > Please send us an email to check our availability and rates. We look forward to working with you! </h4>
+          <h4 style = "font-size: 150%" class='text-center'> Please email us to check our availability and rates. We look forward to working with you! </h4>
           <br>
-          <p class ='text-center'>  <a class = 'btn btn-primary btn-lg' href = "https://us20.list-manage.com/contact-form?u=f14f5e16e35e38de20373df67&form_id=286fad86281713dd67744237458bbf7e">Contact Us</a> </p>
+          <p class='text-center'> <a class='btn btn-primary btn-lg' href="https://us20.list-manage.com/contact-form?u=f14f5e16e35e38de20373df67&form_id=286fad86281713dd67744237458bbf7e">Contact Us</a> </p>
           <br>
           <div class="row">
             <div class="col-xs-12 col-md-4">
@@ -551,7 +577,7 @@ function showSlides() {
                 <i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
               </div>
               <h3 class="text-center">Email</h3>
-              <p class="text-center">mlstemprep@gmail.com</p>
+              <p style = "font-size: 125%" class="text-center">mlstemprep@gmail.com</p>
 
             </div>
             <div class="col-xs-12 col-md-4">
@@ -559,84 +585,48 @@ function showSlides() {
                 <i class="fa fa-commenting-o fa-3x" aria-hidden="true"></i>
               </div>
               <h3 class="text-center">Text</h3>
-              <p class="text-center">205-210-9154</p>
+              <p style = "font-size: 125%" class="text-center">205-210-9154</p>
             </div>
             <div class="col-xs-12 col-md-4">
               <div class="fa-container">
                 <i class="fa fa-credit-card fa-3x" aria-hidden="true"></i>
               </div>
               <h3 class="text-center">Payment</h3>
-              <p class="text-center"><a href = "./assets/images/Venmo_62.jpg"> Venmo </a> <a href = "https://buy.stripe.com/8wM5kH2ahePA1zOcMM ">Stripe</a></p>
+              <p class="text-center"><a class ="btn btn-lg btn-primary" href="./assets/images/Venmo_62.jpg"> Venmo </a> <a class = "btn btn-lg btn-primary" href="https://buy.stripe.com/8wM5kH2ahePA1zOcMM ">Stripe</a></p>
 
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  </div>
+  </div>
 
-<!-- PayPal checkout
-<div class="section-container touch" >
-  <div class="container">
-  <p class ='text center'>
-  <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
-  <input type="hidden" name="cmd" value="_s-xclick">
-  <table>
-  <tr><td><input type="hidden" name="on0" value="Select Tutoring Options">Select Tutoring Options</td></tr><tr><td><select name="os0">
-  	<option value="1 Hour Session">1 Hour Session $52.00 USD</option>
-  	<option value="4 Hour Package">4 Hour Package $208.00 USD</option>
-  	<option value="10 Hour Package">10 Hour Package $515.00 USD</option>
-  </select> </td></tr>
-  </table>
-  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
-  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-  </form>
+  <footer class="footer-container white-text-container" id='footer-section'>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
+    <h4 class='text-center'>Social Media</h4>
+    <div>
+      <p class='text-center'>
 
-      googleMapInit();
-      scrollToAnchor();
-      scrollRevelation('reveal');
-    });
-  </script>
-</p>
-</div>
-</div>
+        <a href="https://www.facebook.com/MLSTEMPrep" class="fa-icon" title="">
+          <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/80960656/" class="fa-icon" title="">
+          <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+        </a>
 
--->
+      </p>
+    </div>
+    <div>
+      <p class='text-center'><small>© ML STEM Prep 2022 </p>
+    </div>
 
+    </div>
 
-  <footer class="footer-container white-text-container" id = 'footer-section'>
-
-
-
-
-          <h4 class ='text-center'>Social Media</h4>
-          <div>
-            <p class ='text-center'>
-
-              <a href="https://www.facebook.com/MLSTEMPrep" class="fa-icon" title="">
-                <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-              </a>
-              <a href="https://www.linkedin.com/company/80960656/" class="fa-icon" title="">
-                <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-              </a>
-
-            </p>
-          </div>
-          <div>
-            <p class ='text-center'><small>© ML STEM Prep 2022 </p>
-          </div>
-
-        </div>
-
-          </div>
-        </div>
-      </div>
+    </div>
+    </div>
+    </div>
     </div>
   </footer>
 

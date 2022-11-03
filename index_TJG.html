@@ -153,7 +153,6 @@
             <li><a href="./index.html#review-section" title="" class="anchor-link">Reviews</a></li>
             <li><a href="./index.html#tutor-section" title="" class="anchor-link">Tutors</a></li>
             <li><a href="./index.html#university-section" title="" class="anchor-link">University Courses</a></li>
-            <li><a href="./index.html#tutor-application-container" title="" class="anchor-link">Careers</a></li>
             <li><a href="./index.html#contact-section-container" title="" class="anchor-link">Contact Us</a></li>
 
 
@@ -173,9 +172,9 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="shadow-2">
-            <h1 style="font-size:600%; font-family: Abril Fatface, Times New Roman, Times, serif; color: #343434">ML STEM Prep</h1>
-            <h3 style="color: #343434" class=""> Private Tutoring for STEM Subjects </h3>
-          </div>
+          <h1 style="font-size:600%; font-family: Abril Fatface, Times New Roman, Times, serif; color: #343434">ML STEM Prep</h1>
+          <h3 style = "color: #343434" class=""> Private Tutoring for STEM Subjects </h3>
+        </div>
 
 
           <br>
@@ -200,6 +199,7 @@
             </div>
 
           </div>
+
           <br>
 
           <div style="text-align:center">
@@ -208,6 +208,51 @@
             <span class="dot"></span>
             <span class="dot"></span>
           </div>
+<!--
+          <script>
+            workslides()
+
+            function workslides() {
+              const slideContainer = document.querySelector('slideshow-container');
+              const slide = document.getElementsByClassName("mySlides fade");
+              let slides = document.getElementsByClassName("mySlides fade");
+              let index = 1;
+
+              const firstClone = slides[0].cloneNode(true);
+              const lastClone = slides[slides.length - 1].cloneNode(true);
+
+              firstClone.id = 'first-clone'
+              lastClone.id = 'last-clone'
+
+              slide.append(firstClone);
+              slide.prepend(lastclone);
+
+              const slideWith = slides[index].clientWidth;
+
+              slide.style.transform = 'translateX(${-slideWidth * index}px)';
+
+              const startSlide = () => {
+                setInterval(() => {
+                  index++;
+                  slide.style.transform = 'translateX(${-slideWidth * index}px)';
+                  slide.style.transition = '.7s';
+                }, interval);
+              };
+              slide.addEventListener('transitionend', ()=>{
+                slides = document.querySelectorAll('.slide');
+                if(slides[index].id === firstClone.id){
+                  slide.style.transition = 'none';
+                  index = 1;
+                  slide.style.transform = 'translateX(${-slideWidth * index}px)';
+                }
+              });
+          }
+
+          </script>
+
+-->
+
+
 
           <script>
             let slideIndex = 0;
@@ -217,6 +262,7 @@
               let i;
               let slides = document.getElementsByClassName("mySlides");
               let dots = document.getElementsByClassName("dot");
+
               for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
               }
@@ -232,7 +278,6 @@
               setTimeout(showSlides, 4500); // Change image every 2 seconds
             }
           </script>
-
 
         </div>
       </div>
@@ -296,6 +341,14 @@
     <div class="container">
 
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      -->
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
@@ -350,6 +403,17 @@
               frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
           </div>
 
+          <!--Original code for scrolling buttons
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      -->
+
           <p class='text-center'> <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
@@ -369,7 +433,7 @@
 
   </div>
 
-
+  <!-- Where I shoudl be looking -->
   <div class="section-container" id="tutor-section">
     <div class="container">
       <div class="row">
@@ -378,40 +442,6 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 col-md-4">
-          <p class='text-center'><img class="profile-pic" src="./assets/images/deepti.png" alt="deepti_profile"></p>
-          <h3 style="font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Deepti</h3>
-          <p class="text-center"> B.S. in Biochemistry </p>
-          <p class="text-center"> University of Virginia </p>
-          <p class="text-center"> Biology, General Chemistry, Organic Chemistry </p>
-          <p style="color: white"> text </p>
-          <!--
-          <p class='text-center'> <a class="btn btn-primary btn-lg" href="https://calendly.com/mlstemprep/1-hour-tutoring-deepti">Availability</a> </p>
-        -->
-          <!-- Calendly inline widget begin -->
-          <div class="calendly-inline-widget" data-url="https://calendly.com/mlstemprep/1-hour-tutoring-deepti?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:630px;"></div>
-          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-          <!-- Calendly inline widget end -->
-        </div>
-
-        <div class="col-xs-12 col-md-4">
-          <p class='text-center'><img class="profile-pic" src="./assets/images/Ben_headshot.png" alt="ben_profile"></p>
-          <h3 style="font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Ben</h3>
-          <p class="text-center"> B.S. in Biomedical Engineering and Chemistry, Pre-med </p>
-          <p class="text-center"> University of Texas, Austin </p>
-          <p class="text-center"> 7+ years of teaching experience </p>
-          <p class="text-center"> General Chemistry 1 & 2, Organic Chemistry 1, Calculus 1 & 2 </p>
-          <p style="color: white"> text </p>
-          <!--
-          <p class="text-center"> <a class='btn btn-primary btn-lg' href="https://calendly.com/mlstemprep/1-hour-tutoring-ben">Availability</a> </p>
-        -->
-          <!-- Calendly inline widget begin -->
-          <div class="calendly-inline-widget" data-url="https://calendly.com/mlstemprep/1-hour-tutoring-ben?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:630px;"></div>
-          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-          <!-- Calendly inline widget end -->
-
-        </div>
-
         <div class="col-xs-12 col-md-4">
 
           <p class='text-center'><img class="profile-pic" src="./assets/images/Minnie_round.png" alt="minnie_profile"></p>
@@ -423,7 +453,7 @@
           <!--
           <p class='text-center'> <a class='btn btn-primary btn-lg' href="https://calendly.com/mlstemprep/minnie">Availability</a> </p>
         -->
-          <!-- Calendly inline widget begin -->
+        <!-- Calendly inline widget begin -->
           <div class="calendly-inline-widget" data-url="https://calendly.com/mlstemprep/minnie?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:630px;"></div>
           <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
           <!-- Calendly inline widget end -->
@@ -431,9 +461,74 @@
 
         </div>
 
+        <div class="col-xs-12 col-md-4">
+          <p class='text-center'><img class="profile-pic" src="./assets/images/Ben_headshot.png" alt="ben_profile"></p>
+          <h3 style="font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Ben</h3>
+          <p class="text-center"> B.S. in Biomedical Engineering and Chemistry </p>
+          <p class="text-center"> University of Texas, Austin </p>
+          <p class="text-center"> 7+ years of teaching experience </p>
+          <p style = "color: white"> text </p>
+          <!--
+          <p class="text-center"> <a class='btn btn-primary btn-lg' href="https://calendly.com/mlstemprep/1-hour-tutoring-ben">Availability</a> </p>
+        -->
+        <!-- Calendly inline widget begin -->
+          <div class="calendly-inline-widget" data-url="https://calendly.com/mlstemprep/1-hour-tutoring-ben?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:630px;"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
 
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+          <p class='text-center'><img class="profile-pic" src="./assets/images/deepti.png" alt="deepti_profile"></p>
+          <h3 style="font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Deepti</h3>
+          <p class="text-center"> B.S. in Biochemistry </p>
+          <p class="text-center"> University of Virginia </p>
+          <p class="text-center"> Subjects: Biology and Organic Chemistry </p>
+          <p style = "color: white"> text </p>
+<!--
+          <p class='text-center'> <a class="btn btn-primary btn-lg" href="https://calendly.com/mlstemprep/1-hour-tutoring-deepti">Availability</a> </p>
+-->
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/mlstemprep/1-hour-tutoring-deepti?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:630px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
+        </div>
 
       </div>
+      <!--
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+
+        <p class ='text-center'><img class="profile-pic" src="./assets/images/luis.png" alt="Luis_profile"></p>
+        <h3 style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Luis</h3>
+        <p class="text-center">M.S. Chemistry - University of Oregon </p>
+        <p class="text-center">B.S. Chemistry and Mathematics -  Linfield University</p>
+        <p class="text-center">5+ years of teaching experience</p>
+
+  -->
+      <!--  <p class ='text-center'>  <a class = 'btn btn-primary btn-lg' href = "luis.html">Availability</a> </p>
+
+  </div> -->
+
+      <!--
+      <div class="col-xs-12 col-md-4">
+        <p class ='text-center'><img class="profile-pic" src="./assets/images/isaiah_circle.png" alt="isaiah_profile"></p>
+        <h3 style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Isaiah</h3>
+        <p class="text-center"> B.S. in Chemistry </p>
+        <p class="text-center"> Texas A&M </p>
+        <p class="text-center"> 5+ years of teaching experience </p>
+        <p class ='text-center'>  <a class = 'btn btn-primary btn-lg' href = "isaiah.html">Availability</a> </p>
+
+      </div>
+
+      <div class="col-xs-12 col-md-4">
+        <p class ='text-center'><img class="profile-pic" src="./assets/images/Ben_headshot.png" alt="ben_profile"></p>
+        <h3 style = "font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Ben</h3>
+        <p class="text-center"> B.S. in Biomedical Engineering and Chemistry </p>
+        <p class="text-center"> University of Virginia </p>
+        <p class ='text-center'>  <a class = 'btn btn-primary btn-lg' href = "deepti.html">Availability</a> </p>
+
+      </div>   -->
 
     </div>
 
@@ -448,13 +543,10 @@
         <div class="col-md-6 col-md-offset-6 text-column">
           <h2 style="font-size: 350%; font-family: Abril Fatface, Times New Roman, Times, serif">Why work with us?</h2>
           <!-- <h3 style="font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif">University of Alabama | Ole Miss | Texas A&M | University of Texas, Austin</h3> -->
-          <p> Worried about an upcoming quiz, test or exam? Struggling in Calculus, Physics, Chemistry or Engineering? ML Stem Prep can help!
-            We offer top tutors in STEM subjects who can help you work smarter, learn the material and improve your grades. We are very selective with our tutors to ensure you get the best experience possible. </p>
-          <p> We have tutored students at many universities including the University of Virginia, the University of Texas at Austin and the University of Alabama. We care about our students and offer a more personalized and tailored experience than
-            other online tutors. We have been through the struggles of learning ourselves and realized we could teach these subjects in a way that's fun and engaging.</p>
-          <p> We hope you choose to work with us! We take the time to understand each student's needs and speed of learning to adapt our teaching style. All tutoring is online but rest assured, our tutors have extensive experience teaching with
-            online tools and a proven track record.
-          </p>
+          <p> We have tutored students at several universities. We care about our students and want them to do well! We have been through the struggles of learning these subjects and realized that we are quite good at teaching them in a way that's
+            fun and exciting! </p>
+          <p>We hope you choose to work with us and learn a thing or two! We take the time to understand each student's needs and speed of learning to tailor our teaching style.</p>
+          <p> All tutoring is online but rest assured, we make our teaching engaging and fun! </p>
 
         </div>
       </div>
@@ -473,109 +565,83 @@
       <div class="row">
         <div class="col-xs-12 col-md-6">
           <div class="fa-container">
-            <img class = "profile-pic2" src="./assets/images/Alabama_round_logo.png">
-            <!-- <i class="fa fa-flask fa-3x" aria-hidden="true"></i> -->
+            <p class='text-center'><img class="university-logo" src="./assets/images/Alabama.svg.png"></p>
           </div>
           <h3 style="font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">University of Alabama</h3>
-          <div class="shadow">
-            <h3 class="text-center">Chemistry</h3>
-            <p class="text-center">General Chemistry: CH 100 101 102 117 118 </p>
-            <p class="text-center">Organic Chemistry: CH 105 231 232 331 332</p>
-
+          <h4 style = "color: rgba(84, 185, 170, 1); font-size: 150%; margin-top: 20px; font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Mathematics</h4>
+          <div style = "margin-top: 10px;margin-bottom: 10px;" class="shadow">
+            <h4 style = "margin-top: 10px;" class="text-center">Alegbra</h3>
+            <p class="text-center">MATH005 - MATH100</p>
           </div>
-
-          <div class="shadow">
-            <h3 class="text-center">Math</h3>
-            <p class="text-center">Algebra: MATH 005 100 </p>
-            <p class="text-center">Pre-Calculus: MATH 112 113 115</p>
-            <p class="text-center">Calculus: MATH 121 125 126 145 146</p>
-
+          <div style = "margin-top: 10px;margin-bottom: 10px;" class="shadow">
+            <h4 style = "margin-top: 10px;" class="text-center">Pre-Calculus</h3>
+            <p class="text-center">MATH112 - MATH113 - MATH115</p>
           </div>
-
-          <div class="shadow">
-            <h3 class="text-center">Physics</h3>
-            <p class="text-center">Physics without Calculus: PHY 101 102 </p>
-            <p class="text-center">Physics with Calculus: PHY 105 106 125 126</p>
+          <div style = "margin-top: 10px;margin-bottom: 10px;" class="shadow">
+            <h4 style = "margin-top: 10px;" class="text-center">Calculus</h3>
+            <p class="text-center">MATH121 - MATH125 - MATH126 - MATH145 - MATH146</p>
+          </div>
+          <h4 style = "color: rgba(84, 185, 170, 1);font-size: 150%; margin-top: 20px; font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Chemistry</h4>
+          <div style = "margin-top: 10px;margin-bottom: 10px;" class="shadow">
+            <h4 style = "margin-top: 10px;" class="text-center">General Chemistry</h3>
+            <p class="text-center">CH100 - CH101 - CH102</p>
+          </div>
+          <div style = "margin-top: 10px;margin-bottom: 10px;" class="shadow">
+            <h4 style = "margin-top: 10px;" class="text-center">Organic Chemistry</h3>
+            <p class="text-center">CH105 - CH231 - CH232</p>
+          </div>
+          <div style = "margin-top: 10px;margin-bottom: 10px;" class="shadow">
+            <h4 style = "margin-top: 10px;" class="text-center">Honors Chemistry</h3>
+            <p class="text-center">CH117 - CH118 - CH331 - CH332</p>
+          </div>
+          <h4 style = "color: rgba(84, 185, 170, 1);font-size: 150%; margin-top: 20px; font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Physics</h4>
+          <div style = "margin-top: 10px;margin-bottom: 10px;" class="shadow">
+            <h4 style = "margin-top: 10px;" class="text-center">Physics without Calculus</h3>
+            <p class="text-center">PHY101 - PHY102</p>
+          </div>
+          <div style = "margin-top: 10px;margin-bottom: 10px;" class="shadow">
+            <h4 style = "margin-top: 10px;" class="text-center">Physics with Calculus</h3>
+            <p class="text-center">PHY105 - PHY106 - PHY125 - PHY126</p>
           </div>
 
         </div>
         <div class="col-xs-12 col-md-6">
           <div class="fa-container">
-            <img class = "profile-pic2" src="./assets/images/UVA_round2.png">
+            <p class='text-center'><img class="university-logo" src="./assets/images/UVA_Logo.png"></p>
           </div>
           <h3 style="font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">University of Virginia</h3>
-
-          <div class="shadow">
-            <h3 class="text-center">Chemistry</h3>
-            <p class="text-center">General Chemistry: CHEM 1410 1411 1810 1811 </p>
-            <p class="text-center">Organic Chemistry: CHEM 2410 2411</p>
+          <h4 style = "color: rgba(84, 185, 170, 1);font-size: 150%; margin-top: 20px; font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Mathematics</h4>
+          <div style = "margin-top: 10px;margin-bottom: 10px;" class="shadow">
+            <h4 style = "margin-top: 10px;" class="text-center">Algebra & Geometry</h3>
+            <p class="text-center">MATH121 - MATH123 - MATH125</p>
+          </div>
+          <div style = "margin-top: 10px;margin-bottom: 10px;" class="shadow">
+            <h4 style = "margin-top: 10px;" class="text-center">Calculus</h3>
+            <p class="text-center">MATH1210 - MATH1220 - MATH1310 - MATH1320</p>
+          </div>
+          <h4 style = "color: rgba(84, 185, 170, 1);font-size: 150%; margin-top: 20px; font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Chemistry</h4>
+          <div style = "margin-top: 10px;margin-bottom: 10px;" class="shadow">
+            <h4 style = "margin-top: 10px;" class="text-center">General Chemistry</h3>
+            <p class="text-center">CHEM1410 - CHEM1411 - CHEM1810 - CHEM1811</p>
+          </div>
+          <div style = "margin-top: 10px;margin-bottom: 10px;" class="shadow">
+            <h4 style = "margin-top: 10px;" class="text-center">Organic Chemistry</h3>
+            <p class="text-center">CHEM2410 - CHEM2411</p>
+          </div>
+          <h4 style = "color: rgba(84, 185, 170, 1);font-size: 150%; margin-top: 20px; font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Physics</h4>
+          <div style = "margin-top: 10px;margin-bottom: 10px;" class="shadow">
+            <h4 style = "margin-top: 10px;" class="text-center">Introduction to Physics</h3>
+            <p class="text-center">PHYS1425 - PHYS2415</p>
+          </div>
+          <div style = "margin-top: 10px;margin-bottom: 10px;" class="shadow">
+            <h4 style = "margin-top: 10px;" class="text-center">Engineering Physics</h3>
+            <p class="text-center">PHYS211 - PHYS212</p>
           </div>
 
-          <div class="shadow">
-            <h3 class="text-center">Math</h3>
-            <p class="text-center">Algebra: MATH  1160 </p>
-            <p class="text-center">Calculus (Non-Engr): MATH 1190 </p>
-            <p class="text-center">Calculus: MATH 1210 1220 1310 1320</p>
-          </div>
-
-          <div class="shadow">
-            <h3 class="text-center">Physics</h3>
-            <p class="text-center">Intro to Physics: PHYS 1425 2415 </p>
-            <p class="text-center">Engineering Physics: Phys 211 212</p>
-          </div>
 
         </div>
-
-      </div>
-      <h3 style="font-size: 200%" class="text-center"> Don't see a course listed? Contact us to see if we can support it! </h3>
-      <p class='text-center'> <a class='btn btn-primary btn-lg' href="https://us20.list-manage.com/contact-form?u=f14f5e16e35e38de20373df67&form_id=286fad86281713dd67744237458bbf7e">Contact Form</a> </p>
-    </div>
-  </div>
-
-
-  <!--
-      <div class="row">
-        <div class="col-xs-12 col-md-4">
-          <div class="fa-container">
-            <i class="fa fa-flask fa-3x" aria-hidden="true"></i>
-          </div>
-          <h3 style="font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Chemistry</h3>
-          <div class="shadow">
-            <h3 class="text-center">University of Alabama</h3>
-            <p class="text-center">General Chemistry: CH 100 101 102 </p>
-            <p class="text-center">Organic Chemistry: CH 105 231 232</p>
-            <p class="text-center">Honors Chemistry: CH 117 118 331 332</p>
-          </div>
-
-          <div class="shadow">
-            <h3 class="text-center">University of Virginia</h3>
-            <p class="text-center">General Chemistry: CHEM 1410 1411 1810 1811 </p>
-            <p class="text-center">Organic Chemistry: CHEM 2410 2411</p>
-
-          </div>
-
         </div>
-        <div class="col-xs-12 col-md-4">
-          <div class="fa-container">
-            <i class="fa fa-calculator fa-3x" aria-hidden="true"></i>
-          </div>
-          <h3 style="font-size: 200%;font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Math</h3>
-
-          <div class="shadow">
-            <h3 class="text-center">University of Alabama</h3>
-            <p class="text-center">Algebra: MATH 005 100 </p>
-            <p class="text-center">Pre-Calculus: MATH 112 113 115</p>
-            <p class="text-center">Calculus: MATH 121 125 126 145 146</p>
-          </div>
-
-          <div class="shadow">
-            <h3 class="text-center">University of Virginia</h3>
-            <p class="text-center">Algebra & Geometry: MATH 121 123 125 </p>
-            <p class="text-center">Calculus: MATH 1210 1220 1310 1320</p>
-          </div>
-
-        </div>
-        <div class="col-xs-12 col-md-4">
+        <!--<div class="col-xs-12 col-md-4">
           <div class="fa-container">
             <i class="fa fa-lightbulb-o fa-3x" aria-hidden="true"></i>
           </div>
@@ -593,54 +659,33 @@
           </div>
 
         </div>
+      -->
       </div>
       <h3 style="font-size: 200%" class="text-center"> Don't see a course listed? Contact us to see if we can support it! </h3>
       <p class='text-center'> <a class='btn btn-primary btn-lg' href="https://us20.list-manage.com/contact-form?u=f14f5e16e35e38de20373df67&form_id=286fad86281713dd67744237458bbf7e">Contact Form</a> </p>
     </div>
   </div>
--->
 
 
 
-
-
-
-  <div class="section-container touch" id="tutor-application-container">
+  <div class="section-container touch" id="contact-section-container">
     <div class="container contact-form-container">
       <div class="row touch">
         <div class="col-xs-12 col-md-offset-2 col-md-8">
           <div class="section-container-spacer">
-            <h2 style="font-size: 350%; font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Apply to be a Tutor</h2>
+            <h2 style="font-size: 350%; font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Get in Touch</h2>
           </div>
-          <h4 style="font-size: 150%" class='text-center'> Interested in becoming a Tutor and helping students achieve their dreams? Apply below </h4>
+          <h4 style = "font-size: 150%" class='text-center'> Please email us to check our availability and rates. We look forward to working with you! </h4>
           <br>
-          <p class='text-center'> <a class='btn btn-primary btn-lg' href="https://forms.gle/4ifLcmGwBxAmp6zr9">Tutor Application</a> </p>
+          <p class='text-center'> <a class='btn btn-primary btn-lg' href="https://us20.list-manage.com/contact-form?u=f14f5e16e35e38de20373df67&form_id=286fad86281713dd67744237458bbf7e">Contact Us</a> </p>
           <br>
-
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
-
-
-  <div class="section-container" id="contact-section-container">
-    <div class="container contact-form-container">
-      <div class="row">
-        <div class="col-xs-12 col-md-offset-2 col-md-8">
-          <div class="section-container-spacer">
-            <h2 style="font-size: 350%; font-family: Abril Fatface, Times New Roman, Times, serif" class="text-center">Contact Us</h2>
-          </div>
-      <div class="row">
+          <div class="row">
             <div class="col-xs-12 col-md-4">
               <div class="fa-container">
                 <i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
               </div>
               <h3 class="text-center">Email</h3>
-              <p style="font-size: 125%" class="text-center">mlstemprep@gmail.com</p>
+              <p style = "font-size: 125%" class="text-center">mlstemprep@gmail.com</p>
 
             </div>
             <div class="col-xs-12 col-md-4">
@@ -648,14 +693,14 @@
                 <i class="fa fa-commenting-o fa-3x" aria-hidden="true"></i>
               </div>
               <h3 class="text-center">Text</h3>
-              <p style="font-size: 125%" class="text-center">205-210-9154</p>
+              <p style = "font-size: 125%" class="text-center">205-210-9154</p>
             </div>
             <div class="col-xs-12 col-md-4">
               <div class="fa-container">
                 <i class="fa fa-credit-card fa-3x" aria-hidden="true"></i>
               </div>
               <h3 class="text-center">Payment</h3>
-              <p class="text-center"><a class="btn btn-lg btn-primary" href="./assets/images/Venmo_62.jpg"> Venmo </a> <a class="btn btn-lg btn-primary" href="https://buy.stripe.com/8wM5kH2ahePA1zOcMM ">Credit Card</a></p>
+              <p class="text-center"><a class ="btn btn-lg btn-primary" href="./assets/images/Venmo_62.jpg"> Venmo </a> <a class = "btn btn-lg btn-primary" href="https://buy.stripe.com/8wM5kH2ahePA1zOcMM ">Credit Card</a></p>
 
             </div>
           </div>
@@ -666,16 +711,14 @@
   </div>
   </div>
 
-
-
   <footer class="footer-container white-text-container" id='footer-section'>
 
     <h4 class='text-center'>Social Media</h4>
     <div>
       <p class='text-center'>
-        <img src="./assets/images/logo.png" width=10% height=10%></img>
-        <br>
-        <br>
+      <img src= "./assets/images/logo.png" width = 10% height = 10%></img>
+          <br>
+          <br>
         <a href="https://www.facebook.com/MLSTEMPrep" class="fa-icon" title="">
           <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
         </a>

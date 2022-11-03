@@ -102,6 +102,12 @@ html {
   text-align: center;
 }
 
+.profile-pic2 {
+  height: 150px;
+  width: 150px;
+  text-align: center;
+}
+
 body {
   margin: 0
 }
